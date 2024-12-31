@@ -7,15 +7,27 @@ class DatabaseAdapter {
     throw new Error("Not implemented");
   }
 
-  async listTables() {
+  async listTables(schemaName = null) {
     throw new Error("Not implemented");
   }
 
-  async getTableSchema(tableName) {
+  async getTableSchema(tableName, schemaName = null) {
     throw new Error("Not implemented");
   }
 
-  async getAllTablesAndSchemas() {
+  async getTableIndexes(tableName, schemaName = null) {
+    throw new Error("Not implemented");
+  }
+
+  async getTableConstraints(tableName, schemaName = null) {
+    throw new Error("Not implemented");
+  }
+
+  async getViewDefinition(tableName, schemaName = null) {
+    throw new Error("Not implemented");
+  }
+
+  async getAllTablesAndSchemas(schemaName = null) {
     throw new Error("Not implemented");
   }
 
